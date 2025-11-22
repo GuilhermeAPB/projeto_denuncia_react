@@ -1,0 +1,38 @@
+projeto_denuncia_react/ 
+├── src/ 
+│ ├── config/ # Configurações 
+│ │ ├── firebase.ts 
+│ │ └── constants.ts 
+│ ├── services/ # Lógica de negócio 
+│ │ ├── auth.service.ts 
+│ │ ├── firestore.service.ts 
+│ │ ├── googleSheets.service.ts 
+│ │ └── validation.service.ts 
+│ ├── security/ # Segurança 
+│ │ ├── sanitize.ts 
+│ │ ├── rateLimit.ts 
+│ │ └── encryption.ts 
+│ ├── components/ # Componentes React 
+│ │ ├── form/ 
+│ │ │ ├── Question.tsx 
+│ │ │ ├── FormContainer.tsx 
+│ │ │ └── SubmitButton.tsx 
+│ │ ├── feedback/ 
+│ │ │ ├── LoadingSpinner.tsx 
+│ │ │ ├── SuccessMessage.tsx 
+│ │ │ └── ErrorMessage.tsx 
+│ │ └── layout/ 
+│ │ ├── Header.tsx 
+│ │ └── Footer.tsx 
+│ ├── types/ # TypeScript types 
+│ │ ├── form.types.ts 
+│ │ └── api.types.ts 
+│ ├── utils/ # Funções utilitárias 
+│ │ ├── validation.ts 
+│ │ ├── formatters.ts 
+│ │ └── logger.ts 
+│ ├── hooks/ # Custom Hooks 
+│ │ ├── useForm.ts 
+│ │ ├── useSubmit.ts 
+│ │ └── useAccessibility.ts 
+│ └── App.tsx
