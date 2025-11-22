@@ -1,0 +1,9 @@
+
+git status
+
+git add .
+git commit -m "Descrição clara do que mudou"
+git commit -m "Adicionar validação de email no formulário"
+git commit -m "Criar componente de Card reutilizável"
+git commit -m "Conectar Firebase ao projeto"
+git push
