@@ -20,7 +20,7 @@ export const SuccessMessage: React.FC<SuccessMessageProps> = ({
 
   return (
     <div
-      className="fixed top-4 right-4 left-4 sm:left-auto sm:right-4 sm:w-96 bg-green-50 border-l-4 border-green-500 p-4 rounded shadow-lg animate-pulse"
+      className="fixed top-4 right-4 left-4 sm:left-auto sm:right-4 sm:w-96 bg-green-50 border-l-4 border-green-500 p-4 rounded shadow-lg animate-pulse z-50"
       role="alert"
       aria-live="polite"
     >

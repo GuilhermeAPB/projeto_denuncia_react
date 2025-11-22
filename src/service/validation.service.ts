@@ -1,3 +1,4 @@
+
 import { FormAnswers, ValidationError } from '../types/form.types';
 import { VALID_AGE_RANGES } from '../config/constants';
 
@@ -63,6 +64,7 @@ export class ValidationService {
       'idade',
       'nomeCrianca',
       'idadeCrianca',
+      'genero',
       'categoria',
       'descricao',
       'consentimento',
@@ -75,7 +77,7 @@ export class ValidationService {
       if (!value || String(value).trim() === '' || value === false) {
         errors.push({
           field: String(field),
-          message: `${field} é obrigatório.`,
+          message: `${this.getFieldLabel(String(field))} é obrigatório.`,
         });
       }
     });
@@ -179,5 +181,21 @@ export class ValidationService {
     }
 
     return errors;
+  }
+
+  private static getFieldLabel(field: string): string {
+    const labels: Record<string, string> = {
+      quemResponde: 'Perfil',
+      idade: 'Idade',
+      nomeCrianca: 'Nome da criança',
+      idadeCrianca: 'Idade da criança',
+      genero: 'Gênero',
+      categoria: 'Categoria de denúncia',
+      descricao: 'Descrição',
+      consentimento: 'Confirmação',
+      politicaPrivacidade: 'Política de Privacidade',
+    };
+
+    return labels[field] || field;
   }
 }

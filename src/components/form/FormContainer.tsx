@@ -17,6 +17,7 @@ export const FormContainer: React.FC = () => {
   // Validação de idade vs categoria em tempo real
   useEffect(() => {
     if (formData.idade && formData.quemResponde) {
+       // Validação em tempo real pode ser adicionada aqui
       // Este efeito será útil para validação em tempo real
       // A validação completa acontece no submit
     }

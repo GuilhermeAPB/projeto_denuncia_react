@@ -7,7 +7,7 @@ export interface FormAnswers {
   // Informações sobre a criança/adolescente
   nomeCrianca: string;
   idadeCrianca: string;
-  genero: 'Masculino' | 'Feminino' | 'Outro' | '';
+  genero: 'Masculino' | 'Feminino' | 'Outro' | 'Prefiro não informar' | '';
 
   // Local da denúncia
   local: string;
